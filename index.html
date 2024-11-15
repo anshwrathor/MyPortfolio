@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ansh's Personal Website</title>
+    <title>Ansh's Interactive Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
+    <!-- Dynamic Background -->
+    <div id="particles-js"></div>
 
+    <!-- Header Section -->
     <header>
-        <h1>Hello, I'm Ansh</h1>
+        <h1 id="dynamic-text">Hello, I'm </h1>
         <p>Welcome to my personal website!</p>
+        <button id="theme-toggle">Switch Theme</button>
     </header>
 
-    <section id="about">
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
         <p>I'm a software development student passionate about technology, fitness, and personal development.</p>
     </section>
 
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A description of your project. You can add links here to showcase your work.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>A description of your second project.</p>
+        <div id="carousel">
+            <div class="carousel-item">Project 1: Cool App</div>
+            <div class="carousel-item">Project 2: Fun Game</div>
+            <div class="carousel-item">Project 3: Creative Website</div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
         <h2>Contact Me</h2>
         <p>Feel free to <a href="mailto:your-email@example.com">reach out via email</a>.</p>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Ansh Rathore</p>
     </footer>
@@ -42,4 +49,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
